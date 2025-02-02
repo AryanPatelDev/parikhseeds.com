@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1d1d1d;
+}
+
+h6 {
+  color: #d8d8d8;
+}
+
+#Logo {
+  width: 6%;
+  min-width: 30px;
+}
+
+/* NAVIGATION */
+.navbar-light .navbar-nav .nav-item .nav-link {
+  font-size: 17px;
+  padding: 0 10px;
+  margin-right: 1em;
+  color: black;
+  position: relative;
+  transition: all 0.5s;
+  display: inline-block;
+  z-index: 1;
+}
+
+nav.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: rgb(205, 245, 120);
+  height: 20px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  z-index: -1;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+  transition: all 0.3s;
+}
+
+nav ul li a:hover {
+  color: #555;
+}
+.navbar i {
+  padding: 0 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.navbar i:hover {
+  transform: scale(1.12);
+}

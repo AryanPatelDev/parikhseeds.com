@@ -3,6 +3,12 @@
   --primary: #ab7442;
   --light: #f5f5f5;
   --dark: #353535;
+  --green: green;
+  --black: #130f40;
+  --light-color: #666;
+  --box-shadow: 0 0.1rem 1rem rgba(0, 0, 0.1);
+  --border: 2rem solid rgba(0, 0, 0.1);
+  --outline: 0.1rem solid rgba(0, 0, 0.1);
 }
 
 .fw-medium {
@@ -280,4 +286,81 @@
   font-size: 1rem !important;
   font-weight: 400 !important;
   margin-bottom: 2rem !important;
+}
+
+.empty {
+  margin: 0 0 0 auto !important;
+}
+/* .fa {
+  margin: 0 1rem;
+  padding: 0.5rem;
+  border: 1px solid;
+} */
+.icons {
+  display: flex;
+  align-items: center;
+  width: 35%;
+}
+.icons div {
+  height: 2.9rem;
+  width: 2.9rem;
+  line-height: 2.9rem;
+  border-radius: 0.75rem;
+  background: #eee;
+  color: var(--black);
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.icons div:hover {
+  background: green;
+  color: white;
+  cursor: pointer;
+}
+.navbar a {
+  font-size: 1.1rem !important;
+  margin: 0 1rem !important;
+  color: var(--black) !important;
+}
+
+.navbar a:hover {
+  color: darkgreen !important;
+  font-weight: 550 !important;
+}
+
+.navbar {
+  width: auto !important;
+}
+@media (max-width: 992px) {
+  .icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+}
+
+.navbar-toggler {
+  border: none; /* Remove border */
+  background-color: transparent; /* Make background transparent */
+  padding: 8px 12px; /* Adjust padding */
+}
+
+/* Change the icon inside the button */
+.navbar-toggler-icon {
+  background-image: url("../bars.svg") fixed center; /* Replace with your own icon */
+  height: 2.5rem;
+  width: 2.75rem;
+  line-height: 2rem;
+  border-radius: 0.75rem;
+  background: #eee;
+  color: red !important;
+  font-size: 1rem;
+  text-align: center;
+  margin-right: 90%;
+  background-position: right center;
+}
+.navbar-toggler-icon:hover {
+  background-color: green !important;
+  font-weight: 550 !important;
 }

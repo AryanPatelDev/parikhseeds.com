@@ -86,5 +86,4 @@
     adjustCarouselHeight();
     window.addEventListener("resize", adjustCarouselHeight);
   });
-});
-jQuery;
+})(jQuery);
